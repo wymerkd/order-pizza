@@ -9,9 +9,16 @@ function Pizza(sizeInput, crustInput, sauceInput, toppings, price) {
 Pizza.prototype.calculatePrice = function() {
   for (var i = 0; i < this.toppings.length; i++) {
     this.price += 1;
+  } if (this.sizeInput === 'small') {
+    this.price += 8;
+  } else if (this.sizeInput === 'medium') {
+    this.price += 10;
+  } else if (this.sizeInput === 'large') {
+    this.price += 12;
+  } else {
+    return this.price
   }
-  return this.price
-  console.log(this.price);
+  console.log(this.price)
 }
 
 $(document).ready(function() {
