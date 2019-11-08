@@ -1,17 +1,17 @@
-function Pizza(sizeInput, crustInput, sauceInput, toppings) {
-  this.sizeInput = sizeInput,
-  this.crustInput = crustInput,
-  this.sauceInput= sauceInput,
-  this.toppings = toppings,
-  this.price = 0
+function Pizza(sizeInput, crustInput, sauceInput, toppings, price) {
+  this.sizeInput = sizeInput;
+  this.crustInput = crustInput;
+  this.sauceInput= sauceInput;
+  this.toppings = toppings;
+  this.price;
 }
 
 Pizza.prototype.calculatePrice = function() {
   this.toppings.forEach(function(topping) {
-    this.price += 1;
+    this.price = this.price += 1;
   })
-  return this.price;
-  console.log(this.price)
+  return this.price
+  console.log(this.price);
 }
 
 
@@ -28,6 +28,7 @@ $(document).ready(function() {
     });
     let userPizza = new Pizza (sizeInput, crustInput, sauceInput, toppings)
     let price = userPizza.calculatePrice();
-    console.log(sizeInput, crustInput, sauceInput, toppings, price);
+
+    console.log(userPizza);
   });
 });
