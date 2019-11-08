@@ -4,6 +4,9 @@ $(document).ready(function() {
     let sizeInput = $('input[name=size]:checked').val();
     let crustInput = $('input[name=crust]:checked').val();
     let sauceInput = $('input[name=sauce]:checked').val();
-    console.log(sizeInput, crustInput, sauceInput)
+    let toppingsInput = $('input[name=toppings]:checked').each(function() {
+      toppings.push($(this).val());
+    });
+    console.log(sizeInput, crustInput, sauceInput, toppings)
   });
 });
