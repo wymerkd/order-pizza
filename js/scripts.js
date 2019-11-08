@@ -3,18 +3,16 @@ function Pizza(sizeInput, crustInput, sauceInput, toppings, price) {
   this.crustInput = crustInput;
   this.sauceInput= sauceInput;
   this.toppings = toppings;
-  this.price;
+  this.price = 0;
 }
 
 Pizza.prototype.calculatePrice = function() {
-  this.toppings.forEach(function(topping) {
-    this.price = this.price += 1;
-  })
+  for (var i = 0; i < this.toppings.length; i++) {
+    this.price += 1;
+  }
   return this.price
   console.log(this.price);
 }
-
-
 
 $(document).ready(function() {
   $('form#order-pizza').submit(function(e) {
