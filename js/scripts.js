@@ -34,6 +34,14 @@ $(document).ready(function() {
     let userPizza = new Pizza (sizeInput, crustInput, sauceInput, toppings)
     let price = userPizza.calculatePrice();
 
+    $('#order-size').html(userPizza.sizeInput);
+    $('#order-crust').html(userPizza.crustInput);
+    $('#order-sauce').html(userPizza.sauceInput);
+    $('#order-toppings').html(userPizza.toppings.toString());
+    $('#order-price').html(userPizza.price);
+
+    $('#order-summary').show();
+
     console.log(userPizza);
   });
 });

@@ -1,3 +1,8 @@
+#order-summary {
+  display: none;
+}
+
+
 h1, h3 {
 color: #70a7da;
 }
