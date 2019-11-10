@@ -1,4 +1,4 @@
-#order-summary {
+#second-order, #order-summary {
   display: none;
 }
 
@@ -10,6 +10,10 @@ header {
 
 #about {
   height: 100vh;
+}
+
+#order {
+  height: 50vh;
 }
 
 #fancy {

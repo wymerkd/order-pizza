@@ -40,8 +40,15 @@ $(document).ready(function() {
     $('#order-toppings').html(userPizza.toppings.toString());
     $('#order-price').html(userPizza.price);
 
+
     $('#order-summary').show();
 
     console.log(userPizza);
   });
-});
+  $(function() {
+  $("#nextButton").click(function() {
+    $("#first-order").slideToggle();
+    $("#second-order").slideToggle();
+  });
+  });
+  });
