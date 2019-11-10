@@ -40,8 +40,8 @@ $(document).ready(function() {
     $('#order-toppings').html(userPizza.toppings.toString());
     $('#order-price').html(userPizza.price);
 
-
-    $('#order-summary').show();
+    $("#second-order").slideToggle();
+    $('#order-summary').slideToggle();
 
     console.log(userPizza);
   });
@@ -50,5 +50,11 @@ $(document).ready(function() {
     $("#first-order").slideToggle();
     $("#second-order").slideToggle();
   });
+  $(function() {
+  $("#backButton").click(function() {
+    $("#second-order").slideToggle();
+    $("#first-order").slideToggle();
   });
   });
+  });
+});
