@@ -1,6 +1,6 @@
 # _Order Pizza_
 
-#### _A web application that a used to create a custom pizza order and generates a price based on the user's selections, 11/8/2019_
+#### _A web application that is used to create a custom pizza order and generates a price based on the user's selections, 11/8/2019_
 
 #### By _**Kyle Wymer**_
 
@@ -15,8 +15,8 @@ _This project demonstrates my current skills and understanding of HTML, CSS, Boo
 |---|---|---|
 | Application calculates price adding $1.00 for each topping| Toppings: Pepperoni , Garlic | $2.00|
 | If size of pizza selected is "small", a corresponding price is added| Small | + $8.00|
-| If size of pizza selected is "medium", a corresponding price is added| 12 | + $10.00|
-| If size of pizza selected is "large", a corresponding price is added| 13 | + $12.00|
+| If size of pizza selected is "medium", a corresponding price is added| Medium | + $10.00|
+| If size of pizza selected is "large", a corresponding price is added| Large | + $12.00|
 
 ## Setup/Installation Requirements
 * _Use the following link to view the page: ()_

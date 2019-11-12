@@ -77,7 +77,9 @@ header {
 #hungry {
   padding-bottom: 40px;
   text-align: center;
-  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+  font-size: 100px;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 2px 2px rgba(0, 0, 0, 0.9);
   font-family: 'Aldrich', sans-serif;

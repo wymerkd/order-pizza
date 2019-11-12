@@ -8,8 +8,10 @@ function Pizza(sizeInput, crustInput, sauceInput, toppings, price) {
 }
 
 Pizza.prototype.calculatePrice = function() {
-  for (var i = 0; i < this.toppings.length; i++) {
-    this.price += 1;
+  if (this.toppings.length >= 3){
+    for (var i = 3; i < this.toppings.length; i++) {
+      this.price += 1;
+    }
   }
   if (this.sizeInput === 'small') {
     this.price += 8;
@@ -22,6 +24,7 @@ Pizza.prototype.calculatePrice = function() {
   }
   console.log(this.price)
 }
+
 
 
 // User Interface Logic
