@@ -15,8 +15,7 @@
         <a class="navbar-brand" href="#"><img src="https://2qnwk534wspy32octm1bhyvz-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/1510-pizza-slice_128.png" width="30" height="30" alt=""></a>
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#order">Order</a>
-        <a class="nav-link" href="#">Specials</a>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
     </nav>
     <header id="home">
@@ -56,13 +55,13 @@
               <h5>Crust:</h5>
               <div class="form-group">
                 <label class="radio">
-                  <input type="radio" name="crust" value="thin" checked> Crunchy Thin
+                  <input type="radio" name="crust" value="crunchy-thin" checked> Crunchy Thin
                 </label><br>
                 <label class="radio">
                   <input type="radio" name="crust" value="hand-tossed"> Hand Tossed
                 </label><br>
                 <label class="radio">
-                  <input type="radio" name="crust" value="pan"> Pan
+                  <input type="radio" name="crust" value="deep-dish"> Deep Dish
                 </label><br>
                 <label class="radio">
                   <input type="radio" name="crust" value="gluten-free"> Gluten Free
@@ -102,7 +101,7 @@
                   <label><input type="checkbox" name="toppings" value="salami"> Salami</label><br>
                   <label><input type="checkbox" name="toppings" value="prosciutto"> Prosciutto</label><br>
                   <label><input type="checkbox" name="toppings" value="ham"> Ham</label><br>
-                  <label><input type="checkbox" name="toppings" value="beef"> Ground Beef</label><br>
+                  <label><input type="checkbox" name="toppings" value="ground-beef"> Ground Beef</label><br>
                   <label><input type="checkbox" name="toppings" value="sausage"> Italian Sausage</label><br>
                   <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label><br>
                   <label><input type="checkbox" name="toppings" value="chicken"> Chicken</label>
@@ -147,12 +146,27 @@
         </div>
       </form>
       <div class="fancy" id="order-summary">
-        <h1>Order Summary</h1>
+        <h1>Thank you for your order!</h1><br>
         <p>Size: <span id="order-size"></span></p>
         <p>Crust: <span id="order-crust"></span></p>
         <p>Sauce: <span id="order-sauce"></span></p>
         <p>Toppings: <span id="order-toppings"></span></p>
         <p>Total Price: $<span id="order-price"></span>.00</p>
+        <p>Pay upon pickup</p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="d-flex flex-row justify-content-around">
+        <div class="flex-md-column">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5902.599114747643!2d-122.6833824195232!3d45.52053981713987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1573524719114!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="flex-md-column">
+          <div class="fancy">
+            <p>123 Fake Street<br>Portland, Oregon 97214</p>
+            <p>Call us @ (555) PDX-PIZZA</p>
+            <p>Or send us an email @ info@pdxpizza.com</p>
+          </div>
+        </div>
       </div>
     </section>
   </body>

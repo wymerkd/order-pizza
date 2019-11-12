@@ -1,7 +1,8 @@
+// Business Logic
 function Pizza(sizeInput, crustInput, sauceInput, toppings, price) {
   this.sizeInput = sizeInput;
   this.crustInput = crustInput;
-  this.sauceInput= sauceInput;
+  this.sauceInput = sauceInput;
   this.toppings = toppings;
   this.price = 0;
 }
@@ -9,7 +10,8 @@ function Pizza(sizeInput, crustInput, sauceInput, toppings, price) {
 Pizza.prototype.calculatePrice = function() {
   for (var i = 0; i < this.toppings.length; i++) {
     this.price += 1;
-  } if (this.sizeInput === 'small') {
+  }
+  if (this.sizeInput === 'small') {
     this.price += 8;
   } else if (this.sizeInput === 'medium') {
     this.price += 10;
@@ -21,6 +23,8 @@ Pizza.prototype.calculatePrice = function() {
   console.log(this.price)
 }
 
+
+// User Interface Logic
 $(document).ready(function() {
   $('form#order-pizza').submit(function(e) {
     e.preventDefault();
@@ -31,13 +35,13 @@ $(document).ready(function() {
     let toppingsInput = $('input[name=toppings]:checked').each(function() {
       toppings.push($(this).val());
     });
-    let userPizza = new Pizza (sizeInput, crustInput, sauceInput, toppings)
+    let userPizza = new Pizza(sizeInput, crustInput, sauceInput, toppings)
     let price = userPizza.calculatePrice();
 
     $('#order-size').html(userPizza.sizeInput);
     $('#order-crust').html(userPizza.crustInput);
     $('#order-sauce').html(userPizza.sauceInput);
-    $('#order-toppings').html(userPizza.toppings.toString());
+    $('#order-toppings').html(userPizza.toppings.join(", "));
     $('#order-price').html(userPizza.price);
 
     $("#second-order").slideToggle();
@@ -46,15 +50,15 @@ $(document).ready(function() {
     console.log(userPizza);
   });
   $(function() {
-  $("#nextButton").click(function() {
-    $("#first-order").slideToggle();
-    $("#second-order").slideToggle();
-  });
-  $(function() {
-  $("#backButton").click(function() {
-    $("#second-order").slideToggle();
-    $("#first-order").slideToggle();
-  });
-  });
+    $("#nextButton").click(function() {
+      $("#first-order").slideToggle();
+      $("#second-order").slideToggle();
+    });
+    $(function() {
+      $("#backButton").click(function() {
+        $("#second-order").slideToggle();
+        $("#first-order").slideToggle();
+      });
+    });
   });
 });

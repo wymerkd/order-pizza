@@ -90,3 +90,26 @@ header {
 #order-summary p{
 font-size: 30px;
 }
+
+button {
+  margin-top: 30px;
+}
+
+span {
+  text-transform: capitalize;
+  word-spacing: 10px;
+}
+
+#contact {
+  height: 80vh;
+  background-image: url('../img/chalkboard.jpg');
+  background-size: cover;
+  padding-top: 85px;
+}
+
+#contact p {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 45px;
+  width: 400px;
+}
