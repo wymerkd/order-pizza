@@ -59,9 +59,15 @@ header {
   border-radius: 25px;
 }
 
+
+#second-order h5 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 #order {
   height: 100vh;
-  padding-top: 160px;
+  padding-top: 90px;
   background-image: url('../img/order-background.png');
   background-size: cover;
 }

@@ -13,7 +13,7 @@ _This project demonstrates my current skills and understanding of HTML, CSS, Boo
 
 |  Behavior | Input  | Output  |
 |---|---|---|
-| Application calculates price adding $1.00 for each topping| Toppings: Pepperoni , Garlic | $2.00|
+| Application calculates price adding $1.00 for each topping if more than three toppings are selected| Toppings: Pepperoni , Garlic, Mushrooms, Spinach | +$1.00|
 | If size of pizza selected is "small", a corresponding price is added| Small | + $8.00|
 | If size of pizza selected is "medium", a corresponding price is added| Medium | + $10.00|
 | If size of pizza selected is "large", a corresponding price is added| Large | + $12.00|
