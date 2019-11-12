@@ -10,7 +10,6 @@
     <title>Order Pizza</title>
   </head>
   <body>
-  <!-- <div class="container-fluid"> -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="navbar-nav">
         <a class="navbar-brand" href="#"><img src="https://2qnwk534wspy32octm1bhyvz-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/1510-pizza-slice_128.png" width="30" height="30" alt=""></a>
@@ -22,26 +21,23 @@
     </nav>
     <header id="home">
       <h1 id="logo">PDX PIZZA CO</h1>
-      <h2 id="logo-established">Cold Beer. Fresh Ingredients.</h2>
+      <h2 class="fancy" id="logo-established">Cold Beer. Fresh Ingredients.</h2>
     </header>
-      <section id="about">
-        <p>We serve fresh local ingredients, cold beer, and good vibes only in the heart of Downtown PDX. Over 50 beers on tap and late night pizza by the slice, what more could you need?</p>
-        <div class="d-flex flex-row justify-content-around">
-          <div class="flex-md-column">
-            <img src="img/small-pizza1.jpg" alt="">
-          </div>
-          <div class="flex-md-column">
-            <img src="img/beers.jpg" alt="">
-          </div>
-          <div class="flex-md-column">
-            <img src="img/small-pizza2.jpg" alt="">
-          </div>
+    <section class="fancy" id="about">
+      <div class="d-flex flex-row justify-content-around">
+        <div class="flex-md-column">
+          <img src="img/small-pizza.jpg" alt="">
         </div>
-      </section>
-      <section id="order">
-        <form id="order-pizza">
-          <div id="first-order">
-            <div class="d-flex flex-row justify-content-around">
+        <div class="flex-md-column">
+          <p>We serve fresh local ingredients, cold beer, and good vibes only in the heart of Downtown Portland. Over 50 beers on tap and late night pizza by the slice. What more could you need?</p>
+        </div>
+      </div>
+    </section>
+    <section id="order">
+      <form class="fancy" id="order-pizza">
+        <div id="first-order">
+          <h1 id="hungry">Hungry? Place an order below</h1>
+          <div class="d-flex flex-row justify-content-around">
             <div id="size" class="flex-md-column">
               <h5>Choose a size:</h5>
               <div class="form-group">
@@ -57,7 +53,7 @@
               </div>
             </div>
             <div id="size" class="flex-md-column">
-              <h5>Select a crust:</h5>
+              <h5>Crust:</h5>
               <div class="form-group">
                 <label class="radio">
                   <input type="radio" name="crust" value="thin" checked> Crunchy Thin
@@ -74,92 +70,90 @@
               </div>
               <button id="nextButton" type="button" name="button">Next</button>
             </div>
-          <div id="sauce" class="flex-md-column">
-            <h5>Select a sauce:</h5>
-            <div class="form-group">
-              <label class="radio-inline">
-                <input type="radio" name="sauce" value="traditional" checked> Traditional Marinara
-              </label><br>
-              <label class="radio-inline">
-                <input type="radio" name="sauce" value="garlic"> Creamy White
-              </label><br>
-              <label class="radio-inline">
-                <input type="radio" name="sauce" value="barbecue"> Sweet'n'Zesty BBQ
-              </label><br>
-              <label class="radio-inline">
-                <input type="radio" name="sauce" value="thai"> Thai Chili
-              </label><br>
-              <label class="radio-inline">
-                <input type="radio" name="sauce" value="garlic"> Garlic Aioli
-              </label>
+            <div id="sauce" class="flex-md-column">
+              <h5>Sauce:</h5>
+              <div class="form-group">
+                <label class="radio-inline">
+                  <input type="radio" name="sauce" value="traditional" checked> Traditional Marinara
+                </label><br>
+                <label class="radio-inline">
+                  <input type="radio" name="sauce" value="garlic"> Creamy White
+                </label><br>
+                <label class="radio-inline">
+                  <input type="radio" name="sauce" value="barbecue"> Sweet'n'Zesty BBQ
+                </label><br>
+                <label class="radio-inline">
+                  <input type="radio" name="sauce" value="thai"> Thai Chili
+                </label><br>
+                <label class="radio-inline">
+                  <input type="radio" name="sauce" value="garlic"> Garlic Aioli
+                </label>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-        <!-- <p>Choose your toppings ($1.00 each):</p> -->
         <div id="second-order">
           <div class="d-flex flex-row justify-content-around">
-          <div class="form-group">
-            <div class="checkbox">
-              <div id="meat" class="flex-md-column">
-                <h5>Meat</h5>
-                <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label><br>
-                <label><input type="checkbox" name="toppings" value="salami"> Salami</label><br>
-                <label><input type="checkbox" name="toppings" value="prosciutto"> Prosciutto</label><br>
-                <label><input type="checkbox" name="toppings" value="ham"> Ham</label><br>
-                <label><input type="checkbox" name="toppings" value="beef"> Ground Beef</label><br>
-                <label><input type="checkbox" name="toppings" value="sausage"> Italian Sausage</label><br>
-                <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label><br>
-                <label><input type="checkbox" name="toppings" value="chicken"> Chicken</label>
+            <div class="form-group">
+              <div class="checkbox">
+                <div id="meat" class="flex-md-column">
+                  <h5>Meat</h5>
+                  <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label><br>
+                  <label><input type="checkbox" name="toppings" value="salami"> Salami</label><br>
+                  <label><input type="checkbox" name="toppings" value="prosciutto"> Prosciutto</label><br>
+                  <label><input type="checkbox" name="toppings" value="ham"> Ham</label><br>
+                  <label><input type="checkbox" name="toppings" value="beef"> Ground Beef</label><br>
+                  <label><input type="checkbox" name="toppings" value="sausage"> Italian Sausage</label><br>
+                  <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label><br>
+                  <label><input type="checkbox" name="toppings" value="chicken"> Chicken</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <div id="veggies" class="flex-md-column">
+                  <h5>Veggies</h5>
+                  <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label><br>
+                  <label><input type="checkbox" name="toppings" value="green-peppers"> Green Peppers</label><br>
+                  <label><input type="checkbox" name="toppings" value="red-peppers"> Red Peppers</label><br>
+                  <label><input type="checkbox" name="toppings" value="olives"> Black Olives</label><br>
+                  <label><input type="checkbox" name="toppings" value="jalapenos"> Jalapenos</label><br>
+                  <label><input type="checkbox" name="toppings" value="dried-tomatoes"> Sun-dried Tomatoes</label><br>
+                  <label><input type="checkbox" name="toppings" value="tomatoes"> Diced Tomatoes</label><br>
+                  <label><input type="checkbox" name="toppings" value="spinach"> Spinach</label><br>
+                  <label><input type="checkbox" name="toppings" value="broccoli"> Broccoli</label><br>
+                  <label><input type="checkbox" name="toppings" value="roasted-garlic"> Roasted Garlic</label><br>
+                  <label><input type="checkbox" name="toppings" value="red-onions"> Red Onions</label><br>
+                  <label><input type="checkbox" name="toppings" value="yellow-onions"> Yellow Onions</label>
+                </div>
+                <button id="backButton" type="button" name="button">Back</button>
+                <button type="submit" name="button" class="">Place Order</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <div id="additional-toppings" class="flex-md-column">
+                  <h5>Additional Toppings</h5>
+                  <label><input type="checkbox" name="toppings" value="pineapple"> Pineapple</label><br>
+                  <label><input type="checkbox" name="toppings" value="extra-cheese"> Extra Mozzarella</label><br>
+                  <label><input type="checkbox" name="toppings" value="goat"> Goat Cheese</label><br>
+                  <label><input type="checkbox" name="toppings" value="feta"> Feta Cheese</label><br>
+                  <label><input type="checkbox" name="toppings" value="extra-sauce"> Extra Sauce</label><br>
+                  <label><input type="checkbox" name="toppings" value="sriracha"> Sriracha</label>
+                </div>
               </div>
             </div>
           </div>
-            <div class="form-group">
-              <div class="checkbox">
-              <div id="veggies" class="flex-md-column">
-                <h5>Veggies</h5>
-                <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label><br>
-                <label><input type="checkbox" name="toppings" value="green-peppers"> Green Peppers</label><br>
-                <label><input type="checkbox" name="toppings" value="red-peppers"> Red Peppers</label><br>
-                <label><input type="checkbox" name="toppings" value="olives"> Black Olives</label><br>
-                <label><input type="checkbox" name="toppings" value="jalapenos"> Jalapenos</label><br>
-                <label><input type="checkbox" name="toppings" value="dried-tomatoes"> Sun-dried Tomatoes</label><br>
-                <label><input type="checkbox" name="toppings" value="tomatoes"> Diced Tomatoes</label><br>
-                <label><input type="checkbox" name="toppings" value="spinach"> Spinach</label><br>
-                <label><input type="checkbox" name="toppings" value="broccoli"> Broccoli</label><br>
-                <label><input type="checkbox" name="toppings" value="roasted-garlic"> Roasted Garlic</label><br>
-                <label><input type="checkbox" name="toppings" value="red-onions"> Red Onions</label><br>
-                <label><input type="checkbox" name="toppings" value="yellow-onions"> Yellow Onions</label>
-              </div>
-              <button id="backButton" type="button" name="button">Back</button>
-              <button type="submit" name="button" class="">Place Order</button>
-            </div>
-          </div>
-            <div class="form-group">
-              <div class="checkbox">
-              <div id="additional-toppings" class="flex-md-column">
-                <h5>Additional Toppings</h5>
-                <label><input type="checkbox" name="toppings" value="pineapple"> Pineapple</label><br>
-                <label><input type="checkbox" name="toppings" value="extra-cheese"> Extra Mozzarella</label><br>
-                <label><input type="checkbox" name="toppings" value="goat"> Goat Cheese</label><br>
-                <label><input type="checkbox" name="toppings" value="feta"> Feta Cheese</label><br>
-                <label><input type="checkbox" name="toppings" value="extra-sauce"> Extra Sauce</label><br>
-                <label><input type="checkbox" name="toppings" value="sriracha"> Sriracha</label>
-              </div>
-            </div>
-            </div>
         </div>
-        </form>
-      </div>
-      <div id="order-summary">
+      </form>
+      <div class="fancy" id="order-summary">
+        <h1>Order Summary</h1>
         <p>Size: <span id="order-size"></span></p>
         <p>Crust: <span id="order-crust"></span></p>
         <p>Sauce: <span id="order-sauce"></span></p>
         <p>Toppings: <span id="order-toppings"></span></p>
         <p>Total Price: $<span id="order-price"></span>.00</p>
       </div>
-    </div>
-      </section>
-    <!-- </div> -->
+    </section>
   </body>
 </html>

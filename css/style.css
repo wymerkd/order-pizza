@@ -8,7 +8,6 @@ font-family: 'Aldrich', sans-serif; */
   display: none;
 }
 
-
 a {
   font-family: 'Fredericka the Great', cursive;
   font-weight: bold;
@@ -21,6 +20,13 @@ header {
   background-size: cover;
 }
 
+.fancy {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.9);
+  font-family: 'Fredericka the Great', cursive;
+}
+
+
 #logo {
   font-size: 120px;
   font-family: 'Aldrich', sans-serif;
@@ -32,24 +38,55 @@ header {
 
 #logo-established {
   font-size: 50px;
-  color: rgba(255, 255, 255, 0.9);
   text-align: center;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.9);
-  font-family: 'Fredericka the Great', cursive;
 }
 
 #about {
-  height: 100vh;
-  background-color:#1c1d1d;
-  padding-top: 100px;
+  height: 90vh;
+  background-image: url('../img/chalkboard.jpg');
+  background-size: cover;
+  padding-top: 160px;
 }
 
 #about p {
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
+  width: 400px;
+}
+
+#about img {
+  border-radius: 25px;
 }
 
 #order {
-  height: 70vh;
+  height: 100vh;
+  padding-top: 160px;
+  background-image: url('../img/order-background.png');
+  background-size: cover;
+}
+
+#order-pizza {
+  font-size: 20px;
+}
+
+#order-pizza h5 {
+  font-size: 30px;
+}
+
+#hungry {
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.9);
+  font-family: 'Aldrich', sans-serif;
+}
+
+#order-summary {
+  padding-left: 150px;
+}
+
+#order-summary p{
+font-size: 30px;
 }
