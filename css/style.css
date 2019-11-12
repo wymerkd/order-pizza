@@ -3,7 +3,6 @@ font-family: 'Amatic SC', cursive;
 font-family: 'Merienda', cursive;
 font-family: 'Fredericka the Great', cursive;
 font-family: 'Aldrich', sans-serif; */
-
 #second-order, #order-summary {
   display: none;
 }
@@ -25,7 +24,6 @@ header {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.9);
   font-family: 'Fredericka the Great', cursive;
 }
-
 
 #logo {
   font-size: 120px;
@@ -58,7 +56,6 @@ header {
 #about img {
   border-radius: 25px;
 }
-
 
 #second-order h5 {
   text-align: center;
@@ -95,8 +92,8 @@ header {
   padding-left: 150px;
 }
 
-#order-summary p{
-font-size: 30px;
+#order-summary p {
+  font-size: 30px;
 }
 
 button {
