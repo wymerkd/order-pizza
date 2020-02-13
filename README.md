@@ -19,7 +19,7 @@ _This project demonstrates my current skills and understanding of HTML, CSS, Boo
 | If size of pizza selected is "large", a corresponding price is added| Large | + $12.00|
 
 ## Setup/Installation Requirements
-* _Use the following link to view the page: ()_
+* _Use the following link to view the page: (https://wymerkd.github.io/order-pizza/)_
 * _Or_
 * _Clone or download the repository from GitHub_
 * _Open index.html in browser_
